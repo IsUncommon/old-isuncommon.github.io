@@ -1,6 +1,9 @@
-@import 'normalize';
-@import 'base';
+@import "compass/css3";
+@import "compass/css3/images";
+@import "compass/utilities/general/clearfix";
 
-body {
-	background: $bg_color;	
-}
+@import "base/normalize";
+@import "base/variables";
+@import "base/grids";
+@import "base/typography";
+
