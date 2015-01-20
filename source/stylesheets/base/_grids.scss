@@ -2,7 +2,7 @@
 
 $susy: (
   columns: 10,
-  gutters: 1/4,
+  gutters: .25,
   gutter-position: outside,
   column-width: 100px,
   global-box-sizing: border-box
@@ -10,5 +10,10 @@ $susy: (
 
 .container {
   @include container;
-  padding: 20px 0;
+  padding: 20px;
 }
+
+$phone: max-width 400px;
+$tablet-small: 400px;
+$tablet: 600px;
+$pc: 800px;

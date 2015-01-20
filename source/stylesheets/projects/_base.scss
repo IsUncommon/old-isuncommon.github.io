@@ -24,20 +24,28 @@
     padding: 0;
   }
 
+
   h2 {
     color: $red;
-    @include span(4);
+    @include breakpoint($pc) {
+      @include span(4);    
+    }
   }
 
   h3 {
     color: $gray;
-    @include span(last 6);
+    @include breakpoint($pc) {
+      @include span(last 6);    
+    }
   }
 
   p,
   blockquote {
-    @include span(last 6);
     font-family: $serif;
+
+    @include breakpoint($pc) {
+      @include span(last 6);    
+    }
   }
 
   p {
@@ -59,9 +67,14 @@
   }
 
   .multi-column {
-    @include span(last 6);
-    @include columns(2);
-    @include column-gap(30px);
+    @include breakpoint($pc) {
+      @include span(last 6);
+    }
+
+    @include breakpoint($tablet) {
+      @include columns(2);
+      @include column-gap(30px);
+    }
 
     p,
     blockquote {
@@ -75,13 +88,16 @@
   }
 
   aside {
-    @include span(4);
-    clear: left;
     margin-bottom: 40px;
 
-    p,
-    blockquote {
-      @include span(3 of 4);
+    @include breakpoint($pc) {
+      @include span(4);
+      clear: left;
+
+      p,
+      blockquote {
+        @include span(3 of 4);
+      }
     }
 
     p {
