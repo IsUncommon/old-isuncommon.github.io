@@ -1,0 +1,86 @@
+.project {
+  h1 {
+    color: $white;
+  }
+
+  h2 {
+    color: $red;
+  }
+
+  h3 {
+    color: $gray;
+  }
+
+  h2,
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+
+    @include breakpoint($pc) {
+      font-size: 40px;
+      line-height: 48px;
+      margin: 20px 0;
+    }
+  }
+
+  p,
+  blockquote {
+    font-family: $serif;
+  }
+
+  p {
+    color: $gray-dark;
+  }
+
+  blockquote {
+    color: $red;
+    font-size: 21px;
+    line-height: 1.1em;
+    font-weight: 500;
+    font-style: italic;
+
+    @include breakpoint($tablet-small) {
+      font-size: 36px;
+    }
+  }
+
+  .multi-column {
+    blockquote {
+      font-size: 21px;
+    }
+  }
+
+  aside {
+    p {
+      font-family: $sans;
+      font-size: 13px;
+      color: $gray-xlight;
+    }
+
+    blockquote {
+      font-size: 18px;
+
+      @include breakpoint($tablet-small) {
+        font-size: 21px;
+      }
+    }
+  }
+
+  section.blockquote {
+    blockquote {
+      font-size: 36px;
+      text-align: center;
+      color: $white;
+
+      @include breakpoint($tablet-small) {
+        font-size: 50px;
+      }
+
+      @include breakpoint($pc) {
+        font-size: 60px;
+      }
+    }
+  }
+}

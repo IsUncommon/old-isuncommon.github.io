@@ -4,7 +4,6 @@
     width: 100%;
     margin: 0 0 40px 0;
     padding: 45% 0 0 0;
-
     background: $gray;
 
     h1 {
@@ -12,53 +11,18 @@
     }
   }
 
-  h1 {
-    color: $white;
-  }
-
-  h2,
-  h3 {
-    font-size: 40px;
-    line-height: 48px;
-    margin: 20px 0;
-    padding: 0;
-  }
-
-
-  h2 {
-    color: $red;
-    @include breakpoint($pc) {
-      @include span(4);    
+  @include breakpoint($pc) {
+    h2, aside {
+      @include span(4);
     }
-  }
 
-  h3 {
-    color: $gray;
-    @include breakpoint($pc) {
+    h3, p, blockquote, .multi-column {
       @include span(last 6);    
     }
-  }
-
-  p,
-  blockquote {
-    font-family: $serif;
-
-    @include breakpoint($pc) {
-      @include span(last 6);    
-    }
-  }
-
-  p {
-    color: $gray-dark;
   }
 
   blockquote {
     margin: 0.2em 0 0.7em 0;
-    color: $red;
-    font-size: 36px;
-    line-height: 1.1em;
-    font-weight: 500;
-    font-style: italic;
   }
 
   img {
@@ -67,23 +31,14 @@
   }
 
   .multi-column {
-    @include breakpoint($pc) {
-      @include span(last 6);
-    }
-
     @include breakpoint($tablet) {
       @include columns(2);
       @include column-gap(30px);
     }
 
-    p,
-    blockquote {
+    p, blockquote {
       width: auto;
       float: none;
-    }
-
-    blockquote {
-      font-size: 21px;
     }
   }
 
@@ -91,23 +46,11 @@
     margin-bottom: 40px;
 
     @include breakpoint($pc) {
-      @include span(4);
       clear: left;
 
-      p,
-      blockquote {
+      p, blockquote {
         @include span(3 of 4);
       }
-    }
-
-    p {
-      font-family: $sans;
-      font-size: 13px;
-      color: $gray-xlight;
-    }
-
-    blockquote {
-      font-size: 21px;
     }
   }
 
@@ -125,12 +68,8 @@
       display: block;
       position: relative;
       margin: 0;
-      padding: 0;
       float: none;
       width: 100%;
-      font-size: 60px;
-      text-align: center;
-      color: $white;
       z-index: 10;
     }
 
