@@ -1,0 +1,112 @@
+.project {
+  header {
+    height: 0;
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 45% 0 0 0;
+
+    background: $gray;
+
+    h1 {
+      margin: -120px 0 0 0;
+    }
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  h2,
+  h3 {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  h2 {
+    color: $red;
+    @include span(4);
+  }
+
+  h3 {
+    color: $gray;
+    @include span(last 6);
+  }
+
+  p,
+  blockquote {
+    @include span(last 6);
+    font-family: $serif;
+  }
+
+  p {
+    color: $gray-dark;
+  }
+
+  blockquote {
+    margin: 0.2em 0 0.7em 0;
+    color: $red;
+    font-size: 36px;
+    line-height: 1.1em;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  aside {
+    @include span(4);
+    clear: both;
+
+    p,
+    blockquote {
+      @include span(3 of 4);
+    }
+
+    p {
+      font-family: $sans;
+      font-size: 13px;
+      color: $gray-xlight;
+    }
+
+    blockquote {
+      font-size: 21px;
+    }
+  }
+
+  section {
+    margin: 2% 0;
+  }
+
+  section.blockquote {
+    position: relative;
+    background: $red;
+    padding: 15% 10%;
+    overflow: hidden;
+
+    blockquote {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      float: none;
+      width: 100%;
+      font-size: 60px;
+      text-align: center;
+      color: $white;
+      z-index: 10;
+    }
+
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

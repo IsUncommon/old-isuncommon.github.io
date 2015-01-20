@@ -10,7 +10,7 @@
     <script>try{Typekit.load();}catch(e){}</script>
   </head>
   
-  <body id="<%= current_page.data.page_id %>" class="<%= page_classes %>">
+  <body id="<%= current_page.data.page_id %>" class="<%= current_page.data.page_classes %>">
     <%= yield %>
   </body>
 </html>
