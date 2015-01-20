@@ -58,9 +58,26 @@
     margin-bottom: 16px;
   }
 
+  .multi-column {
+    @include span(last 6);
+    @include columns(2);
+    @include column-gap(30px);
+
+    p,
+    blockquote {
+      width: auto;
+      float: none;
+    }
+
+    blockquote {
+      font-size: 21px;
+    }
+  }
+
   aside {
     @include span(4);
-    clear: both;
+    clear: left;
+    margin-bottom: 40px;
 
     p,
     blockquote {
