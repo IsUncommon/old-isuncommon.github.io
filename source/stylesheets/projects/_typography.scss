@@ -34,6 +34,12 @@
     color: $gray-dark;
   }
 
+  strong {
+    font-weight: bold;
+    color: $gray;
+    font-style: italic;
+  }
+
   blockquote {
     color: $red;
     font-size: 21px;

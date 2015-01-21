@@ -4,3 +4,14 @@
     background-size: 100% auto;
   }
 }
+
+.project#myntra {
+  h2, blockquote, strong {
+    color: $myntra-pink;
+  }
+
+  .gallery {
+    background: $myntra-pink;
+  }
+
+}
