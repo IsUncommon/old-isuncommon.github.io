@@ -1,10 +1,10 @@
 @include border-box-sizing;
 
 $susy: (
-  columns: 10,
-  gutters: .25,
+  columns: 12,
+  gutters: 1,
   gutter-position: outside,
-  column-width: 100px,
+  column-width: 50px,
   global-box-sizing: border-box
 );
 

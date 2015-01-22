@@ -1,0 +1,91 @@
+.banner {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 30;
+
+  .container {
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  h1 {
+    text-transform: lowercase;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 48px;
+
+    float: right;
+    color: $black;
+  }
+
+  a {
+    color: $black;
+  }
+}
+
+#home .banner {
+  bottom: 0;
+
+  .container {
+    border-top: solid 4px $black;
+    border-bottom: solid 1px $black;
+    margin-bottom: 20px;
+  }
+}
+
+.project .banner {
+  .container {
+    max-width: 100%;
+  }
+
+  h1, a {
+    color: $white;
+    padding: 0 20px;
+  }
+
+  a:before {
+    content: "\00ab";
+    display: inline-box;
+    line-height: 10px;
+    padding-right: 6px;
+  }
+
+  nav ul > li {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+}
+
+nav {
+  float: left;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: inline-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $black;
+    margin-right: 50px;
+    font-size: 16px;
+    line-height: 48px;
+    font-family: $sans;
+  }
+}

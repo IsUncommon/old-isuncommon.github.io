@@ -26,11 +26,12 @@
   }
 
   p,
-  blockquote {
+  blockquote,
+  li {
     font-family: $serif;
   }
 
-  p {
+  p, li {
     color: $gray-dark;
   }
 

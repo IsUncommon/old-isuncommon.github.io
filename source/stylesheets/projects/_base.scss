@@ -7,17 +7,22 @@
     background: $gray;
 
     h1 {
-      margin: -120px 0 0 0;
+      display: block;
+      position: absolute;
+      bottom: 30px;
+      margin: 0;
     }
   }
 
   @include breakpoint($pc) {
     h2, aside {
-      @include span(4);
+      @include span(5);
     }
 
-    h3, p, blockquote, .multi-column {
-      @include span(last 6);    
+    div > {
+      h3, p, blockquote, .multi-column, ul {
+        @include span(last 7);    
+      }      
     }
   }
 
@@ -33,7 +38,7 @@
   .multi-column {
     @include breakpoint($tablet) {
       @include columns(2);
-      @include column-gap(30px);
+      @include column-gap(36px);
     }
 
     p, blockquote {
@@ -49,19 +54,19 @@
       clear: left;
 
       p, blockquote {
-        @include span(3 of 4);
+        @include span(4 of 5);
       }
     }
   }
 
   section {
-    margin: 2% 0;
+    margin: 0 0 2% 0;
   }
 
   section.blockquote {
     position: relative;
     background: $red;
-    padding: 15% 10%;
+    padding: 12% 10%;
     overflow: hidden;
 
     blockquote {
@@ -71,6 +76,7 @@
       float: none;
       width: 100%;
       z-index: 10;
+      color: $white;
     }
 
     img {
