@@ -22,4 +22,23 @@
     width: auto;
     margin-bottom: 0;
   }
+
+  &.nexus5 {
+    white-space: nowrap;
+    overflow: auto;
+    background: $gray-dark;
+  }
+}
+
+div.nexus5,
+.gallery.nexus5 li {
+  background: transparent image-url("/images/gallery/nexus5.png") no-repeat center center;
+  padding: 50px 17px 74px 17px;
+  width: 304px;
+  height: 602px;
+
+  img {
+    display: block;
+    width: 270px;
+  }
 }

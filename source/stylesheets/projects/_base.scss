@@ -20,7 +20,7 @@
     }
 
     div > {
-      h3, p, blockquote, .multi-column, ul {
+      h3, h4, p, blockquote, .multi-column, ul {
         @include span(last 7);    
       }      
     }

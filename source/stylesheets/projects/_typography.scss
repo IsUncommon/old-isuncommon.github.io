@@ -7,12 +7,13 @@
     color: $red;
   }
 
-  h3 {
+  h3, h4 {
     color: $gray;
   }
 
   h2,
-  h3 {
+  h3,
+  h4 {
     font-size: 30px;
     line-height: 36px;
     padding: 0;
@@ -23,6 +24,21 @@
       line-height: 48px;
       margin: 20px 0;
     }
+  }
+
+  h4 {
+    font-size: 21px;
+    line-height: 28px;
+
+    @include breakpoint($pc) {
+      font-size: 30px;
+      line-height: 36px;
+      margin: 10px 0;
+    }
+  }
+
+  h4 + ul {
+    margin-top: 0;
   }
 
   p,

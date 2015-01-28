@@ -1,0 +1,43 @@
+.project#collageflow {
+  .banner {
+    nav a {
+      color: $collageflow;
+    }
+  }
+
+  header {
+    background: $gray image-url('/images/collageflow/header.jpg') no-repeat center center;
+    background-size: 100% auto;
+
+    h1 {
+      span {
+        color: $white;
+        display: block;
+        font-size: 50px;
+      }
+
+      color: $collageflow;
+      line-height: 0.9em;
+      padding-bottom: 1em;
+      font-size: 72px;
+    }
+  }
+
+  h2, blockquote, strong {
+    color: $collageflow;
+  }
+
+  .blockquote {
+    background: $collageflow;
+
+    blockquote {
+      color: $white;
+    }
+
+    img {
+      opacity: 0.2;
+    }
+
+  }
+
+}
